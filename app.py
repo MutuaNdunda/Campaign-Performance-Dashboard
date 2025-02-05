@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import pandas as pd
 import plotly.express as px
 
@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="Campaign Performance Dashboard", layout="wide")
 
 # Load the data
-file_path = 'Data/conversion_data.csv'
+file_path = 'https://raw.githubusercontent.com/MutuaNdunda/Campaign-Performance-Dashboard/refs/heads/main/conversion_data.csv'
 data = pd.read_csv(file_path)
 
 # Sidebar options for grouping
