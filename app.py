@@ -43,12 +43,16 @@ segment_groups['Cost per Approved Conversion'] = (segment_groups['Spent'] / segm
 
 # Display Title
 st.title("Campaign Performance Dashboard")
+# Explanation of computed metrics
 st.markdown("""
-This dashboard provides insights into campaign performance metrics, including Click-Through Rate (CTR), Conversion Rate, and Spend Analysis.
+### Computation Definitions:
+- **Click-Through Rate (CTR)** = (Clicks / Impressions) * 100
+- **Conversion Rate** = (Total Conversions / Clicks) * 100
+- **Cost per Conversion** = Spent / Total Conversions
+- **Approved Conversion Rate** = (Approved Conversions / Clicks) * 100
+- **Cost per Approved Conversion** = Spent / Approved Conversions
 
-- **CTR:** Percentage of impressions that resulted in clicks.
-- **Conversion Rate:** Percentage of clicks that led to conversions.
-- **Spend Analysis:** How budget allocation varies across segments.
+All percentage values are rounded to whole numbers and appended with "%", while cost-related values, including Spent, are rounded to whole numbers.
 """)
 
 # Display the aggregated table
